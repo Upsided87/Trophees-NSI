@@ -1,9 +1,20 @@
-#Programme principale utilisé pour lancer le jeu, il sert a : 
-# Initialiser le jeu (fenêtre, variables globales, état du jeu, etc.).
-# Gérer la boucle principale (game loop).
-# Appeler des fonctions ou classes définies dans d’autres fichiers.
-# Gérer les événements (clavier, souris, collisions, etc.).
+"""Entrée principale du jeu Robot Farmer (stub).
+Lance le moteur de jeu.
+"""
+import tkinter as tk
+from game import moteur 
+from game.carte import Carte
 
-from player import Player 
+def main():
+    print("Robot Farmer — démarrage (stub)")
+    # TODO: initialiser le moteur du jeu
+    root = tk.Tk()
+    root.title("Robot Farmer")
+    canvas = tk.Canvas(root, width=800, height=600)
+    canvas.pack()
+    carte = Carte()
 
-player1 = Player() #Apelle la class Player dans le programme player pour créer le joueur1
+    root.mainloop()     
+
+if __name__ == "__main__":
+    main()
