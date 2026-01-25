@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="16" tileheight="16" infinite="0" nextlayerid="10" nextobjectid="42">
- <tileset firstgid="1" source="nature.tsx"/>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="16" tileheight="16" infinite="0" nextlayerid="10" nextobjectid="47">
+ <tileset firstgid="1" source="../../../../Temporaire/nature.tsx"/>
  <layer id="1" name="background" width="50" height="50">
   <data encoding="csv">
 1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,1,2,
@@ -124,13 +124,18 @@
   <object id="15" name="collision" type="collision" x="151" y="739" width="21" height="15"/>
   <object id="16" name="collision" type="collision" x="586" y="723" width="16" height="19"/>
   <object id="17" name="collision" type="collision" x="584" y="509" width="17" height="23"/>
-  <object id="35" name="Silicium" type="Silicium" x="269.058" y="303.045" width="66.0845" height="63.2523"/>
-  <object id="37" name="Métal" type="Métal" x="78.3573" y="560.774" width="66.0845" height="63.2523"/>
-  <object id="41" name="Silicium" type="Silicium" x="701.44" y="17.9372" width="66.0845" height="63.2523"/>
-  <object id="40" name="Silicium" type="Silicium" x="476.752" y="434.27" width="66.0845" height="63.2523"/>
-  <object id="38" name="Métal" type="Métal" x="671.23" y="591.928" width="66.0845" height="63.2523"/>
-  <object id="39" name="Métal" type="Métal" x="448.43" y="705.216" width="66.0845" height="63.2523"/>
+  <object id="35" name="Silicium" type="silicium_1" x="271.89" y="304.933" width="66.0845" height="63.2523"/>
+  <object id="37" name="Métal" type="metal_3" x="78.3573" y="560.774" width="66.0845" height="63.2523"/>
+  <object id="41" name="Silicium" type="silicium_3" x="701.44" y="17.9372" width="66.0845" height="63.2523"/>
+  <object id="40" name="Silicium" type="silicium_2" x="478.64" y="432.382" width="66.0845" height="63.2523"/>
+  <object id="38" name="Métal" type="metal_2" x="671.23" y="591.928" width="66.0845" height="63.2523"/>
+  <object id="39" name="Métal" type="metal_1" x="448.43" y="705.216" width="66.0845" height="63.2523"/>
   <object id="36" x="-90.6302" y="92.5183"/>
+  <object id="42" name="Extracteur CO2" type="extract_co2_1" x="22.6575" y="144.442" width="50.0354" height="97.2386"/>
+  <object id="44" name="Extracteur CO2" type="extract_co2_2" x="278.499" y="655.181" width="50.0354" height="97.2386"/>
+  <object id="43" name="Panneaux solaires" type="solar_panel_2" x="21.7135" y="674.062" width="85.9098" height="87.798"/>
+  <object id="45" name="Panneaux solaires" type="solar_panel_1" x="470.144" y="161.435" width="85.9098" height="87.798"/>
+  <object id="46" name="Génerateur électrique" type="generator_1" x="688.223" y="387.066" width="63.2523" height="85.9098"/>
  </objectgroup>
  <layer id="8" name="Ressources" width="50" height="50">
   <data encoding="csv">
