@@ -10,7 +10,7 @@ class Player(pygame.sprite.Sprite):
     def __init__(self, x, y):
         super().__init__()
         # Chargement de la feuille de sprites du drone
-        self.sprite_sheet = pygame.image.load('sprites/drone.png')
+        self.sprite_sheet = pygame.image.load('sprites/drone_spritesheet.png')
         self.image = self.get_image(0, 0)
         self.rect = self.image.get_rect()
         self.position = [x, y]
@@ -55,7 +55,7 @@ class Player(pygame.sprite.Sprite):
         
     def update(self):
         """Met à jour le rectangle principal et le rectangle des 'pieds' selon la position."""
-        self.rect.topleft = self.position 
+        self.rect.topleft = tuple(self.position) 
         self.feet.midbottom = self.rect.midbottom
         
     def move_back(self):
