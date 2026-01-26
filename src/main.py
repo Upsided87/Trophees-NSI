@@ -8,8 +8,16 @@ from game import Game
 #=====================
 
 if __name__ == '__main__':
+    # Initialisation globale de Pygame (vidéo, son, événements)
     pygame.init()
-    game = Game()
-    os.chdir("..") #Retourne à la racine du projet
-    game.run()
+    try:
+        # Création de l'instance principale du jeu
+        game = Game()
+        # Lancement de la boucle principale
+        game.run()
+    except Exception as e:
+        # Bloc de capture d'erreurs pour faciliter le débogage au lancement
+        print(f"Erreur lors du lancement du jeu : {e}")
+        import traceback
+        traceback.print_exc()
 
