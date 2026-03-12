@@ -9,8 +9,10 @@ class Player(pygame.sprite.Sprite):
     
     def __init__(self, x, y):
         super().__init__()
+        import os
+        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         # Chargement de la feuille de sprites du drone
-        self.sprite_sheet = pygame.image.load('sprites/drone_spritesheet.png')
+        self.sprite_sheet = pygame.image.load(os.path.join(base_dir, 'sprites', 'drone_spritesheet.png'))
         self.image = self.get_image(0, 0)
         self.rect = self.image.get_rect()
         self.position = [x, y]

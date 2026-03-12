@@ -15,7 +15,12 @@ class Game :
         pygame.display.set_caption("Terraformers")
         
         # Charger la carte en format .tmx 
-        tmx_data = pytmx.load_pygame('map/world.tmx')
+        import os
+        # Obtenir le chemin absolu du répertoire racine du projet
+        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        map_path = os.path.join(base_dir, 'map', 'world.tmx')
+        
+        tmx_data = pytmx.load_pygame(map_path)
         map_data = pyscroll.data.TiledMapData(tmx_data)
         # Gestion de l'affichage de la carte avec défilement
         self.map_layer = pyscroll.orthographic.BufferedRenderer(map_data, self.screen.get_size())
