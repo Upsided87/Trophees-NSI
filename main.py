@@ -1,9 +1,15 @@
-#Programme principale utilisé pour lancer le jeu, il sert a : 
-# Initialiser le jeu (fenêtre, variables globales, état du jeu, etc.).
-# Gérer la boucle principale (game loop).
-# Appeler des fonctions ou classes définies dans d’autres fichiers.
-# Gérer les événements (clavier, souris, collisions, etc.).
+import pygame
+from sources.jeu.game import Game
 
-from player import Player 
-
-player1 = Player() #Apelle la class Player dans le programme player pour créer le joueur1
+if __name__ == '__main__':
+    # Initialisation globale de Pygame (vidéo, son, événements)
+    pygame.init()
+    try:
+        # Création de l'instance principale du jeu
+        game = Game()
+        # Lancement de la boucle principale
+        game.run()
+    except Exception as e:
+        print(f"Erreur lors du lancement du jeu : {e}")
+        import traceback
+        traceback.print_exc()
